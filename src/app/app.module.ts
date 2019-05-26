@@ -5,19 +5,22 @@ import {
   MatInputModule,
   MatCardModule,
   MatButtonModule,
-  MatToolbarModule
+  MatExpansionModule,
+  MatToolbarModule,
 } from '@angular/material';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { PostCreateComponent } from './posts/post-create/post-create.component';
+import { PostListComponent } from './posts/post-list/post-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    PostCreateComponent
+    PostCreateComponent,
+    PostListComponent
   ],
   imports: [
     BrowserAnimationsModule,
@@ -25,8 +28,9 @@ import { PostCreateComponent } from './posts/post-create/post-create.component';
     FormsModule,
     MatButtonModule,
     MatCardModule,
+    MatExpansionModule,
     MatInputModule,
-    MatToolbarModule
+    MatToolbarModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
