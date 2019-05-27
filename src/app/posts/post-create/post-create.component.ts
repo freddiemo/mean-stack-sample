@@ -19,6 +19,7 @@ export class PostCreateComponent {
     if (form.invalid) {
       return;
     }
-    this.postsService.addPost(form.value.title, form.value.title);
+    this.postsService.addPost(form.value.title, form.value.content);
+    form.resetForm();
   }
 }
